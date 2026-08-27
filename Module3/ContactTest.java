@@ -14,6 +14,8 @@ public class ContactTest {
         contacts.add(new Contact("Ada Lovelace", "+1 617 555 0101"));
         contacts.add(new Contact("Grace Hopper", "555-0000"));
         contacts.add(new Contact("Alan Turing", "555-0001"));
+        contacts.add(new Contact("Katherine Johnson", "555-0002"));
+        contacts.add(new Contact("Katherine Johnson", "555-0003"));
     }
 
     @Test
@@ -39,6 +41,12 @@ public class ContactTest {
     @Test
     void toString_containsPhone() {
         assertTrue(contacts.get(2).toString().contains("555-0001"));
+    }
+
+    @Test
+    void contacts_withSameName_areIndependent() {
+        assertEquals("Katherine Johnson", contacts.get(3).getName());
+        assertEquals("555-0003", contacts.get(4).getPhone());
     }
 
 }
