@@ -11,3 +11,6 @@ Boston University Online AI Programs CS Foundations Bootcamp.
  
 ## Programs
 Each module folder contains the Java source code and exercises I completed as part of that module.
+
+#Notes
+- Module6 gcc/cc1.exe error: Smart App Control may block gcc or cc1, turn it off for module 6 to work
